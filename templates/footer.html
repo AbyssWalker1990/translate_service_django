@@ -1,3 +1,34 @@
-<div class="footer bg-success" height="200px" width="100%">
-  <h1 class="text-center">FOOTER</h1>
-</div>
+{% load static %}
+<footer class="bg-light border-top shadow-lg">
+  <div class="container">
+    <ul class="nav justify-content-center">
+      <li class="nav-item d-flex">
+        <a href="#" class="nav-link text-muted">Home</a>
+      </li>
+      <li class="nav-item d-flex">
+        <a href="#" class="nav-link text-muted">About</a>
+      </li>
+      <li class="nav-item d-flex">
+        <a href="#" class="nav-link text-muted">Translation</a>
+      </li>
+      <li class="nav-item d-flex">
+        <a href="#" class="nav-link text-muted">Profile</a>
+      </li>
+    </ul>
+    <img class="d-block mx-auto my-2" src="{% static 'images/logo.png' %}" alt="Logo" height="40px" width="40px">
+    <p class="lead text-center">Copyright &#169; <span id="year"></span></p>
+  </div>
+</footer>
+
+<script>
+  // $('#year').text(new Date().getFullYear())
+  function setYear() {
+    target = document.querySelector('#year')
+    console.log(target)
+    target.innerHTML = (new Date().getFullYear())
+  }
+  setYear()
+  
+</script>
+ 
+  

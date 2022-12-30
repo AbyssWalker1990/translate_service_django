@@ -1,2 +1,31 @@
-<h1 class="bg-primary">NAVBAR</h1>
-<hr>
+{% load static %}
+<nav class="navbar navbar-expand-sm bg-light shadow">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand ms-3 d-flex">
+      <img src="{% static 'images/logo.png' %}" alt="Logo" height="55px" width="55px">
+      <h3 class='d-flex mb-0 mt-2 ms-2'>TranslatoR</h3>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto me-5 text-center">
+        <li class="nav-item px-2">
+          <a class="nav-link active border-start" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link border-start" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link  border-start" aria-current="page" href="#">Translations</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link  border-start" aria-current="page" href="#">Profile</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

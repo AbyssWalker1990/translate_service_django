@@ -1,11 +1,9 @@
-$primary: #482673;
-$warning: #345435;
 
 @import '../bootstrap/scss/functions.scss';
 @import '../bootstrap/scss/variables.scss';
 
-h1 {
-    font-size: 100px !important;
+.content-wrapper {
+    min-height: 80vh;
 }
 
 @import '../bootstrap/scss/bootstrap.scss';

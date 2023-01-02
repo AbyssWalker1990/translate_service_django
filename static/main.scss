@@ -6,4 +6,11 @@
     min-height: 80vh;
 }
 
+@media (max-width: 768px) {
+    .translation-card {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
 @import '../bootstrap/scss/bootstrap.scss';

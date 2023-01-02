@@ -1,7 +1,15 @@
 {% extends 'main.html' %}
 
 {% block content %}
-  <div class="container content-wrapper">
-    <h3 class="my-5">Translations page</h3>
+  <div class="container content-wrapper py-5 d-md-flex gap-1 justify-content-start">
+    {% for card in cards %}
+    <div class="card translation-card" style="width: 25rem;">
+      <img src="{{ card.image.url }}" class="card-img-top img-fluid" style="height: 250px;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{card.name}}</h5>
+        <p class="card-text">{{ card.translate_request}}</p>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 {% endblock content %}

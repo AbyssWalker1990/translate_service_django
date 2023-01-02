@@ -1,6 +1,10 @@
 from django.shortcuts import render
+from .models import TranslationCard
 
 def translations(request):
-    return render(request, 'translations.html')
+    cards = TranslationCard.objects.all()
+    print(cards)
+    context = {'cards': cards}
+    return render(request, 'translations.html', context)
 
 

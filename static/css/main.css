@@ -1,4 +1,4 @@
-.content-wrapper{min-height:80vh}/*!
+.content-wrapper{min-height:80vh}@media(max-width: 768px){.translation-card{display:block;margin:10px auto}}/*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.

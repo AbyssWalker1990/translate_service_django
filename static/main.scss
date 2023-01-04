@@ -6,6 +6,10 @@
     min-height: 80vh;
 }
 
+.translation-card {
+    flex-wrap: wrap;
+}
+
 @media (max-width: 768px) {
     .translation-card {
         display: block;

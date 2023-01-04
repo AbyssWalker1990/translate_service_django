@@ -8,3 +8,9 @@ def translations(request):
     return render(request, 'translations.html', context)
 
 
+def translation_single(request, pk):
+    card = TranslationCard.objects.get(id=pk)
+    context = {"card": card}
+    return render(request, 'translation-single.html', context)
+
+

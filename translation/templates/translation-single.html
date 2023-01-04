@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="container bg-light p-2">
+  <h1>{{card.name}}</h1>
+  <div class="d-flex px-2">
+    <div>
+      <img src="{{card.image.url }}" alt="image" class="img img-fluid me-2" ALIGN="left">
+      <p class="lead p-2">{{card.translate_request}}</p>
+    </div>
+  </div>  
+</div>
+
+{% endblock content %}
